@@ -2,20 +2,26 @@
 //  AppDelegate.swift
 //  SocialBaseBrasiliaEvents
 //
-//  Created by Michel Monteiro on 11/12/16.
+//  Created by Willian Pinho on 11/12/16.
 //  Copyright © 2016 Willian Pinho. All rights reserved.
 //
 
 import UIKit
+import Realm
+import RealmSwift
+
+let realm = try! Realm()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var r = Requests()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        r.fetchAllEventsFromServer()
+
         return true
     }
 

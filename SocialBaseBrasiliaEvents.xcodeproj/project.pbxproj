@@ -8,20 +8,70 @@
 
 /* Begin PBXBuildFile section */
 		D529CB8A1DD6C6AC0040F50B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529CB891DD6C6AC0040F50B /* AppDelegate.swift */; };
-		D529CB8C1DD6C6AC0040F50B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529CB8B1DD6C6AC0040F50B /* ViewController.swift */; };
+		D529CB8C1DD6C6AC0040F50B /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529CB8B1DD6C6AC0040F50B /* EventListViewController.swift */; };
 		D529CB8F1DD6C6AC0040F50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D529CB8D1DD6C6AC0040F50B /* Main.storyboard */; };
 		D529CB911DD6C6AC0040F50B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D529CB901DD6C6AC0040F50B /* Assets.xcassets */; };
 		D529CB941DD6C6AC0040F50B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D529CB921DD6C6AC0040F50B /* LaunchScreen.storyboard */; };
+		D529CB9C1DD6C7C00040F50B /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529CB9B1DD6C7C00040F50B /* EventTableViewCell.swift */; };
+		D529CB9E1DD6C7D80040F50B /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529CB9D1DD6C7D80040F50B /* EventViewController.swift */; };
+		D529CBA01DD6C9A30040F50B /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529CB9F1DD6C9A30040F50B /* Event.swift */; };
+		D529CBA61DD6CA520040F50B /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529CBA51DD6CA520040F50B /* Requests.swift */; };
+		D529CBA81DD6CA5F0040F50B /* ServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529CBA71DD6CA5F0040F50B /* ServerConfiguration.swift */; };
+		D529CBAA1DD6CDED0040F50B /* EventImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529CBA91DD6CDED0040F50B /* EventImageTableViewCell.swift */; };
+		D529CBAD1DD6CE090040F50B /* EventTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529CBAC1DD6CE090040F50B /* EventTitleTableViewCell.swift */; };
+		D529CBAF1DD6CE1C0040F50B /* EventDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529CBAE1DD6CE1C0040F50B /* EventDescriptionTableViewCell.swift */; };
+		D529CBB61DD6E27B0040F50B /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D529CBB11DD6E27B0040F50B /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D529CBB71DD6E27B0040F50B /* AlamofireImage.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D529CBB21DD6E27B0040F50B /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D529CBB81DD6E27B0040F50B /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D529CBB31DD6E27B0040F50B /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D529CBB91DD6E27B0040F50B /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D529CBB41DD6E27B0040F50B /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D529CBBA1DD6E27B0040F50B /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = D529CBB51DD6E27B0040F50B /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D529CBBC1DD6E2A60040F50B /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D529CBB11DD6E27B0040F50B /* Alamofire.framework */; };
+		D529CBBD1DD6E2A60040F50B /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D529CBB21DD6E27B0040F50B /* AlamofireImage.framework */; };
+		D529CBBE1DD6E2A60040F50B /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D529CBB31DD6E27B0040F50B /* Realm.framework */; };
+		D529CBBF1DD6E2A60040F50B /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D529CBB41DD6E27B0040F50B /* RealmSwift.framework */; };
+		D529CBC01DD6E2A60040F50B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D529CBB51DD6E27B0040F50B /* SwiftyJSON.framework */; };
+		D529CBC21DD6E5830040F50B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D529CBC11DD6E5830040F50B /* ViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D529CBB01DD6E23F0040F50B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D529CBB61DD6E27B0040F50B /* Alamofire.framework in CopyFiles */,
+				D529CBB71DD6E27B0040F50B /* AlamofireImage.framework in CopyFiles */,
+				D529CBB81DD6E27B0040F50B /* Realm.framework in CopyFiles */,
+				D529CBB91DD6E27B0040F50B /* RealmSwift.framework in CopyFiles */,
+				D529CBBA1DD6E27B0040F50B /* SwiftyJSON.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D529CB861DD6C6AC0040F50B /* SocialBaseBrasiliaEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialBaseBrasiliaEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D529CB891DD6C6AC0040F50B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D529CB8B1DD6C6AC0040F50B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D529CB8B1DD6C6AC0040F50B /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
 		D529CB8E1DD6C6AC0040F50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D529CB901DD6C6AC0040F50B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D529CB931DD6C6AC0040F50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D529CB951DD6C6AC0040F50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D529CB9B1DD6C7C00040F50B /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		D529CB9D1DD6C7D80040F50B /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		D529CB9F1DD6C9A30040F50B /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		D529CBA51DD6CA520040F50B /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		D529CBA71DD6CA5F0040F50B /* ServerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConfiguration.swift; sourceTree = "<group>"; };
+		D529CBA91DD6CDED0040F50B /* EventImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventImageTableViewCell.swift; sourceTree = "<group>"; };
+		D529CBAC1DD6CE090040F50B /* EventTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTitleTableViewCell.swift; sourceTree = "<group>"; };
+		D529CBAE1DD6CE1C0040F50B /* EventDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		D529CBB11DD6E27B0040F50B /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		D529CBB21DD6E27B0040F50B /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		D529CBB31DD6E27B0040F50B /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		D529CBB41DD6E27B0040F50B /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		D529CBB51DD6E27B0040F50B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		D529CBC11DD6E5830040F50B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +79,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D529CBBC1DD6E2A60040F50B /* Alamofire.framework in Frameworks */,
+				D529CBBD1DD6E2A60040F50B /* AlamofireImage.framework in Frameworks */,
+				D529CBBE1DD6E2A60040F50B /* Realm.framework in Frameworks */,
+				D529CBBF1DD6E2A60040F50B /* RealmSwift.framework in Frameworks */,
+				D529CBC01DD6E2A60040F50B /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +109,69 @@
 		D529CB881DD6C6AC0040F50B /* SocialBaseBrasiliaEvents */ = {
 			isa = PBXGroup;
 			children = (
+				D529CBBB1DD6E28B0040F50B /* Frameworks */,
+				D529CBA41DD6CA3E0040F50B /* Server */,
 				D529CB891DD6C6AC0040F50B /* AppDelegate.swift */,
-				D529CB8B1DD6C6AC0040F50B /* ViewController.swift */,
+				D529CBA31DD6CA160040F50B /* Views */,
+				D529CBA21DD6CA0A0040F50B /* Controllers */,
+				D529CBA11DD6CA030040F50B /* Model */,
 				D529CB8D1DD6C6AC0040F50B /* Main.storyboard */,
 				D529CB901DD6C6AC0040F50B /* Assets.xcassets */,
 				D529CB921DD6C6AC0040F50B /* LaunchScreen.storyboard */,
 				D529CB951DD6C6AC0040F50B /* Info.plist */,
 			);
 			path = SocialBaseBrasiliaEvents;
+			sourceTree = "<group>";
+		};
+		D529CBA11DD6CA030040F50B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D529CB9F1DD6C9A30040F50B /* Event.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D529CBA21DD6CA0A0040F50B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D529CB8B1DD6C6AC0040F50B /* EventListViewController.swift */,
+				D529CB9D1DD6C7D80040F50B /* EventViewController.swift */,
+				D529CBC11DD6E5830040F50B /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		D529CBA31DD6CA160040F50B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D529CB9B1DD6C7C00040F50B /* EventTableViewCell.swift */,
+				D529CBA91DD6CDED0040F50B /* EventImageTableViewCell.swift */,
+				D529CBAC1DD6CE090040F50B /* EventTitleTableViewCell.swift */,
+				D529CBAE1DD6CE1C0040F50B /* EventDescriptionTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D529CBA41DD6CA3E0040F50B /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				D529CBA51DD6CA520040F50B /* Requests.swift */,
+				D529CBA71DD6CA5F0040F50B /* ServerConfiguration.swift */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		D529CBBB1DD6E28B0040F50B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D529CBB11DD6E27B0040F50B /* Alamofire.framework */,
+				D529CBB21DD6E27B0040F50B /* AlamofireImage.framework */,
+				D529CBB31DD6E27B0040F50B /* Realm.framework */,
+				D529CBB41DD6E27B0040F50B /* RealmSwift.framework */,
+				D529CBB51DD6E27B0040F50B /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +184,7 @@
 				D529CB821DD6C6AC0040F50B /* Sources */,
 				D529CB831DD6C6AC0040F50B /* Frameworks */,
 				D529CB841DD6C6AC0040F50B /* Resources */,
+				D529CBB01DD6E23F0040F50B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -136,8 +247,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D529CB8C1DD6C6AC0040F50B /* ViewController.swift in Sources */,
+				D529CBAA1DD6CDED0040F50B /* EventImageTableViewCell.swift in Sources */,
+				D529CB9C1DD6C7C00040F50B /* EventTableViewCell.swift in Sources */,
+				D529CB8C1DD6C6AC0040F50B /* EventListViewController.swift in Sources */,
+				D529CB9E1DD6C7D80040F50B /* EventViewController.swift in Sources */,
+				D529CBC21DD6E5830040F50B /* ViewController.swift in Sources */,
+				D529CBA61DD6CA520040F50B /* Requests.swift in Sources */,
+				D529CBAD1DD6CE090040F50B /* EventTitleTableViewCell.swift in Sources */,
 				D529CB8A1DD6C6AC0040F50B /* AppDelegate.swift in Sources */,
+				D529CBA01DD6C9A30040F50B /* Event.swift in Sources */,
+				D529CBA81DD6CA5F0040F50B /* ServerConfiguration.swift in Sources */,
+				D529CBAF1DD6CE1C0040F50B /* EventDescriptionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +378,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SocialBaseBrasiliaEvents/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.willianpinho.SocialBaseBrasiliaEvents;
@@ -270,6 +394,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = SocialBaseBrasiliaEvents/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.willianpinho.SocialBaseBrasiliaEvents;
@@ -297,6 +425,7 @@
 				D529CB9A1DD6C6AC0040F50B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
